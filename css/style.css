@@ -1,0 +1,547 @@
+/*box sizing for different browsers*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.btn-lg {
+	color: #fff;
+	background-color: #FB0202;
+	border: #fb0202 solid 1px;
+	padding-left: 40px;
+	padding-right: 40px
+}
+
+.btn-lg:hover {
+	color: #fb0202;
+	background-color: transparent;
+	border: #fb0202 solid 1px;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.logo {
+	width: 100px;
+}
+
+
+/** Header Section **/
+
+header {
+    position: relative;
+	background-image: url(../img/voltnboltheader.jpg);
+	background-repeat: none;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	color: #fff;
+	max-height: 900px;
+}
+
+#header-logo {
+	margin-top: 150px;
+}
+
+.header-text {
+	font-size: 17px;
+	font-style: italic;
+	margin-bottom: 90px;
+}
+
+.character {
+    position: absolute;
+    right: 48%;
+    bottom: 9%;
+}
+
+.header-icon {
+	background-color: transparent;
+	border: none;
+	font-size: 80px;
+}
+
+.header-icon:focus { /** get rid of blue outline **/
+	outline:none!important;
+}
+
+.fa-play-circle {
+	color: #fff;
+	opacity: 0.5;
+}
+
+.header-title {
+	margin-top: 300px;
+	margin-bottom: 15px;
+}
+
+.modal-dialog {
+	width: 100%;
+}
+.modal-content {
+	border-radius: 0px;
+	background-color: #000;
+}
+
+.clickable { /** modal on iOS mobile device **/
+    cursor: pointer;
+}
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+margin-top: -80px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+}
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) and (max-width: 1439px) {
+    #header-logo {
+        margin-top: 40px;
+    }
+} 
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .character {
+        width: 30%;
+    }
+    .header-title {
+		font-size: 20px;
+		margin-top: 250px;
+	}
+}
+
+@media (max-width: 767px) {
+	#header-logo {
+	margin-top: 15px;
+	}
+	.header-text {
+	margin-bottom: 50px;
+	}
+    .character {
+        width: 20%;
+        bottom: 10%
+    }
+	.header-title {
+        font-size: 16px;
+		margin-top: 100px;
+	}
+	.modal-content {
+		margin-left: -20px;
+	}
+	.video-container {
+		margin-top: -30px;
+	}
+}
+
+/** Extra small devices (portrait phones, less than 576px) **/
+@media (max-width: 575px) {
+    .character {
+        right: 50%;
+        bottom: 12%;
+    }
+    .header-icon {
+        font-size: 40px;
+    }
+    .header-title {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 479px) {
+	.header-text {
+	margin-bottom: 25px;
+		font-size: 15px;
+	}
+    .character {
+        right: 55%;
+    }
+	.header-title {
+		margin-top: 50px;
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 320px) {
+	.header-text {
+	margin-bottom: 25px;
+		font-size: 15px;
+	}
+    .character {
+        bottom: 18%;
+    }
+	.header-title {
+		margin-top: 50px;
+		font-size: 15px;
+	}
+}
+
+/** iOT Section **/
+
+.iot-section {
+    color: #000;
+    background: #fff;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.iot-img {
+        width: 55%;
+        margin-top: 5%;
+    }
+
+.generator {
+    margin-top: 25px;
+}
+
+.iot-col3-text {
+       margin-top: 12%;
+    }
+
+/** 24" screens and up **/
+@media (min-width: 1920px) {
+    .iot-section {
+        padding-left: 425px;
+        padding-right: 425px;
+    }
+    .generator {
+        width: 76%;
+    }
+}
+
+/** 22" screens and up **/
+@media (min-width: 1680px) and (max-width: 1919px) {
+    .iot-section {
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .generator {
+        width: 74%;
+    } 
+}
+
+/** 20" screens and up **/
+@media (min-width: 1600px) and (max-width: 1679px) {
+    .iot-section {
+        padding-left: 275px;
+        padding-right: 275px;
+    }
+    .generator {
+        width: 81%;
+    }
+}
+
+/** 19" screens and up **/
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .iot-section {
+        padding-left: 190px;
+        padding-right: 190px;
+    }
+    .generator {
+        width: 76%;
+    }
+}
+    
+
+/** 15" screens and up **/
+@media (min-width: 1366px) and (max-width: 1439px) {
+    .iot-section {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .generator {
+        width: 74%;
+    }
+}
+
+/** 13" screens and up **/
+@media (min-width: 1280px) and (max-width: 1335px) {
+    .iot-section {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    .generator {
+        width: 74%;
+    }
+}
+
+/** 12" screen and up **/
+@media (min-width: 1200px) and (max-width: 1279px) {
+    .iot-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .generator {
+        width: 74%;
+    }
+}
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .generator {
+        width: 82%;
+    }
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .iot-title {
+        font-size: 18px;
+    }
+    .iot-col1-text, 
+    .iot-col3-text {
+        font-size: 10px;
+    }
+    .generator {
+        width: 67%;
+    }
+    .generator-series {
+        font-size: 12px;
+    }
+}
+/** Small devices (landscape phones, 568px and up) **/
+@media (max-width: 767px) {
+    .iot-img {
+        width: 25%;
+        margin: 15px auto;
+        display: block;
+    }
+    .generator {
+        width: 50%;
+        margin-top: 15px;
+    }
+    .generator-series {
+        margin-bottom: 15px;
+    }
+    .iot-col3-text {
+        margin: 0 30%;
+    }
+}
+
+/** Extra small devices (portrait phones, less than 567px) **/
+@media (max-width: 567px) {
+    h3 {
+        font-size: 20px;
+    }
+    .iot-img {
+        width: 35%;
+    }
+    .iot-col3-text {
+        margin: 0 15%;
+    }
+}
+
+
+/** Section 2 **/
+
+.section2 {
+    color: #000;
+    background-color: #F9F8F7;
+}
+
+.section2-apple-store,
+.section2-google-play {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.section2-apple-store {
+    float: right;
+}
+
+.download-img {
+    margin-bottom: 15px;
+}
+
+#section2-icons {
+    text-align: center;
+    font-size: 1.5em;
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+#facebook-icon {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#twitter-icon {
+    padding-left: .5px;
+    padding-right: .5px;
+}
+
+#pinterest-icon {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+#linkedin-icon {
+    padding-left: .5px;
+    padding-right: .5px;
+}
+
+#instagram-icon {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#android-icon {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#app-store {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#app-store-icon {
+    width: 82%;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#section2-icons a:link,
+#section2-icons a:visited {
+    background-color: #F9F8F7;
+    color: #000;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#section2-icons a:hover,
+#section2-icons a:active {
+    border: #000 solid 1px;
+    
+}/** 19" screens and up **/
+@media (min-width: 1440px) {
+    .section2 {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section2 p {
+        line-height: 100%
+    }
+    .vehicle {
+        margin-top: 4%;
+    }
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .section2-title {
+        font-size: 18px;
+    }
+    .section2 p {
+        font-size: 10px;
+    }
+    .vehicle {
+        margin-top: 8%;
+    } 
+}
+
+/** Section 3 **/
+
+.section3 {
+    position: relative;
+	color: #fff;
+	background-color: #000;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#section3-title {
+	font-style: italic;
+}
+
+.check-icon {
+	font-size: 20px;
+}
+
+.fa-check-circle {
+	color: #CB6219;
+}
+
+.section3-subtitle {
+    margin-top: 25px;
+}
+
+.section3-iphone {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: auto;
+    height: 100%;
+}
+
+@media (max-width: 1199px) {
+    .section3-iphone {
+        display: none;
+    }
+}
+
+/** Medium devices (tablets, 768px and up) **/
+@media (min-width: 768px) and (max-width: 991px) {
+    .section3-subtitle h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .check-icon {
+		text-align: right;
+	}
+}
+
+/** Section 4 **/
+
+.section4 {
+	background-color: #000;
+}
+
+.section4-img {
+	width: 100%;
+}
+
+/** Footer Section **/
+
+.footer-section {
+	color: #fff;
+	background-color: #000;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
